@@ -1,5 +1,6 @@
 {
   "include": ["src"],
+  "files": ["build.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "module": "commonjs",
@@ -7,6 +8,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "lib": ["dom", "es2022"],
+    "resolveJsonModule": true,
     "outDir": "dist",
     "target": "es6",
     "types": ["node", "react", "chrome"],

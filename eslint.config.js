@@ -4,7 +4,7 @@ const tseslint = require("typescript-eslint");
 
 module.exports = tseslint.config(
   {
-    ignores: ["temp", "*.js", "node_modules", "dist/**/*"]
+    ignores: ["temp", "*.js", "node_modules", "out/**/*", "dist/**/*"]
   },
   {
     ...react.configs.flat.recommended,

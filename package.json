@@ -9,6 +9,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
+    "build": "bun build.ts",
     "debug": "webpack --config webpack.config.ts --mode development --watch",
     "debug: prod": "webpack --config webpack.config.ts --mode production --watch",
     "lint": "eslint src"
