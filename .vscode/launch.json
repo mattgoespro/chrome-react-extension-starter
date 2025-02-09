@@ -1,16 +1,25 @@
 {
-  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Chrome against localhost, with sourcemaps",
-      "type": "chrome",
+      "name": "debug",
+      "type": "node",
       "request": "attach",
-      "url": "chrome://extensions",
       "sourceMaps": true,
-      "webRoot": "${workspaceRoot}",
-      "sourceMapPathOverrides": {
-        "webpack:///./*": "${webRoot}/*"
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMapRenames": true,
+      "preLaunchTask": "debug",
+      "env": {
+        "EXTENSION_STORAGE_INITIAL_DATA": "${env:EXTENSION_STORAGE_INITIAL_DATA}"
       }
+    },
+    {
+      "name": "debug: prod",
+      "type": "node",
+      "request": "attach",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMapRenames": true,
+      "preLaunchTask": "build"
     }
   ]
 }

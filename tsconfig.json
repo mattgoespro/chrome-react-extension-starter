@@ -1,31 +1,22 @@
 {
+  "include": ["src"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "checkJs": true,
+    "module": "commonjs",
     "jsx": "react-jsx",
-    "lib": ["es2017", "dom", "dom.iterable"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "paths": {
-      "runtime/*": ["src/runtime/*"],
-      "shared/*": ["src/shared/*"],
-      "theme": ["./src/shared/theme/theme.ts"],
-      "typography": ["./src/shared/theme/typography.ts"]
-    },
-    "sourceMap": true,
-    "sourceRoot": "src",
-    "noEmit": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "lib": ["dom", "es2022"],
     "outDir": "dist",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "target": "esnext",
-    "types": ["node", "chrome", "./typings/types.d.ts", "jest"],
-    "useDefineForClassFields": true
-  },
-  "include": ["src", "typings", "webpack", "babel.config.js"],
-  "files": ["webpack.config.ts", "webpack/types.ts"]
+    "target": "es6",
+    "types": ["node", "react", "chrome"],
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "paths": {
+      "@shared/*": ["src/shared/*"]
+    },
+    "allowJs": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
 }

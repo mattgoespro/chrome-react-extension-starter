@@ -3,18 +3,17 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "test",
-      "problemMatcher": ["$tsc"],
-      "group": "test",
-      "detail": "Run tests",
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": false,
-        "panel": "shared",
-        "showReuseMessage": true,
-        "clear": false
-      }
+      "script": "debug",
+      "label": "debug",
+      "isBackground": true,
+      "problemMatcher": "$ts-checker-webpack-watch"
+    },
+    {
+      "type": "npm",
+      "script": "debug: prod",
+      "label": "build",
+      "isBackground": true,
+      "problemMatcher": "$ts-checker-webpack-watch"
     }
   ]
 }

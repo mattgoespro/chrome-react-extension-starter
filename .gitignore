@@ -2,6 +2,7 @@ node_modules/
 dist/
 coverage/
 temp/
+out/
 
 logs
 *.log

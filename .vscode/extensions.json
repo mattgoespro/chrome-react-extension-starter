@@ -1,15 +1,14 @@
 {
   "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
     "dbaeumer.vscode-eslint",
     "herrmannplatz.npm-dependency-links",
     "mskelton.npm-outdated",
     "christian-kohler.npm-intellisense",
     "fabiospampinato.vscode-open-in-npm",
-    "better-ts-errors.better-ts-errors",
     "usernamehw.errorlens",
     "felipecaputo.git-project-manager",
-    "github.copilot-chat",
-    "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "richie5um2.vscode-sort-json",
     "dsznajder.es7-react-js-snippets",
@@ -17,12 +16,14 @@
     "nyxb.vscode-styled-colors",
     "pkief.material-icon-theme",
     "ibm.output-colorizer",
-    "markosth09.color-picker",
-    "github.copilot",
     "cezaraugusto.vscode-chrome-extesion-manifest-json-schema",
     "meganrogge.template-string-converter",
-    "firsttris.vscode-jest-runner",
-    "ritwickdey.liveserver",
-    "ms-vscode.js-debug-nightly"
+    "dbaeumer.vscode-eslint",
+    "antiantisepticeye.vscode-color-picker",
+    "steoates.autoimport",
+    "sibiraj-s.vscode-scss-formatter",
+    "mrmlnc.vscode-scss",
+    "yoavbls.pretty-ts-errors",
+    "amodio.tsl-problem-matcher"
   ]
 }
