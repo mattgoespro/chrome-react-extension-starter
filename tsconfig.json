@@ -1,6 +1,5 @@
 {
   "include": ["src"],
-  "files": ["build.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "module": "commonjs",
